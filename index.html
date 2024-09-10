@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div id="display" class="display">0</div>      
+        <!-- crated a div tag class name =display -->
+        <div class="buttons">
+            <!-- created a div with class display -->
+            <div class="button" onclick="clearDisplay()">C</div>
+            <!-- div with button tag an giveing onclick= clear function to clear the display -->
+            <div class="button" onclick="appendToDisplay('/')">/</div>
+            <!-- div with botton tag and onclick function =appendTodisplay i.e the '/'' will be added to diplay -->
+            <div class="button" onclick="appendToDisplay('*')">*</div>
+            <!-- div with botton tag and onclick function =appendTodisplay i.e the '*' will be added to diplay -->
+
+            <div class="button operator" onclick="appendToDisplay('-')">-</div>
+            <!-- div with botton tag and onclick function =appendTodisplay i.e the '-' will be added to diplay -->
+
+            <div class="button" onclick="appendToDisplay('7')">7</div>
+            <!-- div with botton tag and onclick function =appendTodisplay i.e the '7' will be added to diplay -->
+
+            <div class="button" onclick="appendToDisplay('8')">8</div>
+            <!-- div with botton tag and onclick function =appendTodisplay i.e the '8' will be added to diplay -->
+
+            <div class="button" onclick="appendToDisplay('9')">9</div>
+            <!-- div with botton tag and onclick function =appendTodisplay i.e the '9' will be added to diplay -->
+
+            <div class="button operator" onclick="appendToDisplay('+')">+</div>
+            <!-- div with botton tag and onclick function =appendTodisplay i.e the '+' will be added to diplay -->
+
+            <div class="button" onclick="appendToDisplay('4')">4</div>
+            <!-- div with botton tag and onclick function =appendTodisplay i.e the '4' will be added to diplay -->
+
+            <div class="button" onclick="appendToDisplay('5')">5</div>
+            <!-- div with botton tag and onclick function =appendTodisplay i.e the '5' will be added to diplay -->
+
+            <div class="button" onclick="appendToDisplay('6')">6</div>
+            <!-- div with botton tag and onclick function =appendTodisplay i.e the '6' will be added to diplay -->
+
+            <div class="button operator" onclick="calculate()">=</div>
+            <!-- div with botton tag and onclick function = calculate() and will be added to diplay -->
+
+            <div class="button" onclick="appendToDisplay('1')">1</div>
+            <!-- div with botton tag and onclick function =appendTodisplay i.e the '1' will be added to diplay -->
+            
+            <div class="button" onclick="appendToDisplay('2')">2</div>
+            <!-- div with botton tag and onclick function =appendTodisplay i.e the '2' will be added to diplay -->
+
+            <div class="button" onclick="appendToDisplay('3')">3</div>
+            <!-- div with botton tag and onclick function =appendTodisplay i.e the '3' will be added to diplay -->
+
+            <div class="button" onclick="appendToDisplay('.')">.</div>
+            <!-- div with botton tag and onclick function =appendTodisplay i.e the '.' will be added to diplay -->
+
+            <div class="button" onclick="appendToDisplay('0')" style="grid-column: span 2;">0</div>
+            <!-- div with botton tag and onclick function =appendTodisplay i.e the '0' will be added to diplay -->
+            
+        </div>
+    </div>
+
+    <script src="./functionsofcalculator.js"></script>
+</body>
+</html>

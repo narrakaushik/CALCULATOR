@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(./background-realistic-abstract-technology-particle_23-2148431735.avif);
+}
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: hsl(0, 0%, 0%);
+    padding: 20px;
+    width: 250px;
+}
+.display {
+    font-size: 2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    background-color: #eee;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.button {
+    font-size: 1.5em;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fafafa44;
+    cursor: pointer;
+    text-align: center;
+}
+.button:hover {
+    background-color: #ddd;
+}
+.button.operator {
+    background-color: rgb(242, 243, 243);
+}
+.button.operator:hover {
+    background-color: #f78;
+}
